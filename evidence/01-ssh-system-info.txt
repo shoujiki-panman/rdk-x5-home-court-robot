@@ -1,0 +1,31 @@
+Sat Jan  1 08:14:10 AM CST 2000
+Linux ubuntu 6.1.83 #1 SMP PREEMPT Wed Apr  8 21:09:59 CST 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+3.5.0
+               total        used        free      shared  buff/cache   available
+Mem:           6.9Gi       563Mi       6.0Gi       1.0Mi       368Mi       6.3Gi
+Swap:             0B          0B          0B
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        29G  8.2G   20G  31% /
+Bus 002 Device 002: ID 05e3:0626 Genesys Logic, Inc. USB3.1 Hub
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 002: ID 05e3:0610 Genesys Logic, Inc. Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+ls: cannot access '/dev/video*': No such file or directory
+/dev/snd:
+by-path
+controlC0
+pcmC0D0c
+pcmC0D0p
+timer
