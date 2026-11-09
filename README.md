@@ -15,10 +15,17 @@ This repository starts with Stage 1 (Ignite): board bring-up, a camera, and a fi
 | Challenge | Result | Evidence |
 | --- | --- | --- |
 | 1. Board bring-up | Connected with RDK Studio (Type-C direct) and logged in over SSH | [01-ssh-system-info.txt](evidence/01-ssh-system-info.txt) |
-| 2. Sensor | USB camera on `/dev/video0` (USB), captured 640×480 frames | Re-shoot planned (the first shots include other people's faces, so they are not published) |
-| 3. First AI task | YOLO11n object detection on the BPU, 28.4 FPS / about 25 ms per frame with the live camera | [03-yolo11-kite.jpg](evidence/03-yolo11-kite.jpg) |
+| 2. Sensor | USB camera (ELECOM UCAM-C0220F) detected as `/dev/video0`, captured a 640×480 frame with ffmpeg | [02-camera-capture-blurred.jpg](evidence/02-camera-capture-blurred.jpg) |
+| 3. First AI task | YOLO11n object detection on the BPU, 28.4 FPS / about 25 ms per frame with the live camera | [03-yolo11-kite.jpg](evidence/03-yolo11-kite.jpg), [04-yolo11-camera-blurred.jpg](evidence/04-yolo11-camera-blurred.jpg) |
+
+All Stage 1 evidence was taken on 2026-10-31 at DUG Tokyo #1 (Akihabara), on an RDK X5 lent at the venue, and run by me. People's faces in the camera shots are pixelated. I will re-run the same steps on my own sample kit and replace these images.
 
 ![YOLO11 on the official sample image](evidence/03-yolo11-kite.jpg)
+
+The USB camera frame, then YOLO11 on the BPU with the live camera (faces pixelated):
+
+![USB camera frame](evidence/02-camera-capture-blurred.jpg)
+![YOLO11 on the live camera](evidence/04-yolo11-camera-blurred.jpg)
 
 ## Hardware
 
@@ -92,6 +99,6 @@ ssh -i ~/Developer/rdk-keys/id_rdk -N -L 0.0.0.0:8080:127.0.0.1:8080 root@192.16
 
 ## Next
 
-- Re-shoot the camera evidence with objects only
+- Re-run Stage 1 on my own sample kit and replace the venue evidence
 - Stage 1 update on Discord and the showcase PR (by 2026-11-10)
 - Stage 2: design the home court robot (RDK X5 + StackChan)
